@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram</title>
+    <link data-default-icon="https://static.cdninstagram.com/rsrc.php/y4/r/QaBlI0OZiks.ico" rel="shortcut icon" type="image/x-icon" href="https://static.cdninstagram.com/rsrc.php/y4/r/QaBlI0OZiks.ico">
+    <link rel="stylesheet" href="profile.css">
+</head>
+<body>
+    <div id="center">
+        <div id="menu">
+            <img src="assets/instagram-logo.png" id="menu-logo">
+            <ul>
+                <li><img src="assets/home.png"><a href="#"><span>Home</span></a></li>
+                <li class="menu-item search" ><img src="assets/search.png"><a href="#"><span>Search</span></a></li>
+                <li><img src="assets/compass.png"><a href="#"><span>Explore</span></a></li>
+                <li><img src="assets/reels.png"><a href="#" ><span>Reels</span></a></li>
+                <li><img src="assets/send.png"><a href="#" ><span>Message</span></a> </li>
+                <li class="menu-item notifications" ><img src="assets/heart.png"><a href="#" ><span>Notifications</span></a></li>
+                <li><img src="assets/add.png"><a href="#" ><span>Create</span></a> </li>
+                <li><img src="assets/Me.jpg" style="border-radius: 50%; object-fit: cover;"><a href="#" ><span>Profile</span></a></li>
+                <div id="lower">
+                <li><img src="assets/threads.png"><a href="#"  ><span>Threads</span></a> </li>
+                <li><img src="assets/menu.png"><a href="#" ><span>More</span></a></li>
+                </div>
+            </ul>
+        </div>
+        
+        <div id="profile-page">
+            <div id="profile-header">
+                <div id="profile-pic-box">
+                <div id="profile-pic">
+                    <img src="assets/vkas.jpeg">
+                </div>
+                </div>
+                <div id="info-box">
+                    <div id="name-line">
+                    <div id="name">
+                    <p>virat.kohli </p>
+                    <img src="assets/blueTick.png" style="width: 20px;height: 20px;margin-bottom: 2.5px;">
+                    </div>
+                    <div id="button">
+                    <button type="button" onclick="follow(event)" id="follow-btn" style="padding: 5px 20px;border-radius: 6px;border: none;background-color:#229df0 ;font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;color: white;">Follow</button>
+                    <button type="button" style="padding: 5px 15px;border-radius: 6px;border: none;background-color: lightgrey;font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Message</button>
+                    <button type="button" id="user" style="padding:3px 5px ;border-radius: 6px;border: none;background-color: lightgrey;" ><img src="assets/user.png" style="display: flex" ></button>
+                    <button type="button" id="dot" style="border-radius: 7px;border: none;background-color:transparent" ><img src="assets/threeDot.png" style="display: flex;"></button>
+                </div>
+                </div>
+                <div id="count-line">
+                    <p><b>1399 </b>posts </p>
+                    <p id="follow-count"><b>270M </b>followers</p>
+                    <p><b>282 </b>following</p>
+                </div>
+                <div id="bio-line">
+                    <p><b>Virat Kohli</b></p>
+                    <p>Carpedium!</p>
+                </div>
+                <div id="follow-line">
+                    <p>Followed by <b>msdhoni,sachin10dulkar + </b>50 more</p>
+                </div>
+                </div>
+            </div>
+            <div id="grid-header">
+                <ul>
+                    <a href="#grid-header"><img src="assets/grid.png" style="width: 13px;height: 13px; margin-bottom: -1px;"><span> POSTS</span></a>
+                    <a href="#"><img src="assets/reels.png" style="width: 13px;height: 13px;margin-bottom: -1px;"><span> REELS</span></a>
+                    <a href="#"><img src="assets/tag.png" style="width: 17px;height: 17px;margin-bottom: -3px;" ><span> TAGGED</span></a>
+                </ul>
+            </div>
+            <div id="grid">
+                <div class="grid-pic" ><img src="assets/vk2.jpg" onclick="photo(event)"></div>
+                <div class="grid-pic" ><img src="assets/vk3.jpg" onclick="photo(event)"></div>
+                <div class="grid-pic" ><img src="assets/vk5.jpg" onclick="photo(event)"></div>
+                <div class="grid-pic" ><img src="assets/vk9.jpg" onclick="photo(event)"></div>
+                <div class="grid-pic" ><img src="assets/vk4.jpg" onclick="photo(event)"></div>
+                <div class="grid-pic" ><img src="assets/vk6.jpg" onclick="photo(event)"></div>
+                <div class="grid-pic" ><img src="assets/vk7.jpg" onclick="photo(event)"></div>
+                <div class="grid-pic" ><img src="assets/vk8.jpeg" onclick="photo(event)"></div>
+                <div class="grid-pic" ><img src="assets/vk1.jpg" onclick="photo(event)"></div>
+                <div class="grid-pic"><img src="assets/vk10.jpg" onclick="photo(event)"></div>
+                <div class="grid-pic"><img src="assets/vk11.jpg" onclick="photo(event)"></div>
+                <div class="grid-pic"><img src="assets/vk12.jpg" onclick="photo(event)"></div>
+                
+            </div>
+        </div>
+    </div>
+    <div id="overlay" class="overlay" style="display: none;">
+        <img id="expanded-img" src="">
+    </div>
+    <script src="profile.js"></script>
+</body>
+</html>
+

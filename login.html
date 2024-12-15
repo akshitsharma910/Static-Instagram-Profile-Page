@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram</title>
+    <link rel="stylesheet" href="login.css">
+    <link data-default-icon="https://static.cdninstagram.com/rsrc.php/y4/r/QaBlI0OZiks.ico" rel="shortcut icon" type="image/x-icon" href="https://static.cdninstagram.com/rsrc.php/y4/r/QaBlI0OZiks.ico">
+</head>
+<body>
+    <div id="center">
+        <div id="phone-box">
+            <img src="assets/phone-bezel.png" id="android" >
+            <img src="assets/login1.png" id="img1">
+            <img src="assets/iphone-bezel.png" id="iphone"> 
+            <div id="slideshow" class="slideshow">
+                <img src="assets/login2.png" id="img2">
+                <img src="assets/login3.png" id="img3">
+                <img src="assets/login4.png" id="img4">
+            </div>  
+        </div>
+            <div id="login-box">
+                <div id="login" >
+                    <form onsubmit="authenticate(event)" id="login-form">
+                    <img src="assets/instagram-logo.png">
+                    <input type="text" placeholder="Phone number, username, or email" id="name">
+                    <br>
+                    <input type="password" placeholder="Password" id="pass" >
+                    <button type="text" id="show">Show</button>
+                    <br>
+                    <button type="submit" id="login-btn">Log In</button>
+                    <br>
+                    <hr id="line1"><p id="or">OR</p><hr id="line2">
+                    <br>
+                    <a href="https://www.facebook.com/"><p id="facebook">Log in with Facebook</p></a>
+                    <br>
+                    <a href="forget.html"><p id="forget">Forgot password?</p></a>
+                    </form>
+                </div>
+                <div id="signup"><p>Don't have an account? <a href="signup.html"><span style="color:#4cb5f9;font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-weight: 600;">  Sign up </span></a></p></div>
+                <div id="getapp"><p>Get the app.</p></div>
+                <a href="https://play.google.com/store/apps/details?id=com.instagram.android&hl=en_IN" target="_blank"><img src="assets/googlePlay.png" id="googlePlay" ></a>
+                <a href="https://apps.microsoft.com/detail/9nblggh5l9xt?rtc=1&hl=en-in&gl=IN" target="_blank"><img src="assets/microsoft.png" id="microsoft" ></a>
+            </div>
+    </div>
+    <script src="login.js" ></script>
+</body>
+</html>
