@@ -10,6 +10,9 @@ function photo(event) {
 }
 
 
+
+
+
 function follow(event) {
     event.preventDefault();
 
@@ -27,3 +30,22 @@ function follow(event) {
         followerCount.innerHTML="<b>270M</b> followers";
     }
 }
+
+
+
+
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    const moreBtn = document.getElementById("more-btn");
+    const dropdown = document.getElementById("dropdown");
+    moreBtn.addEventListener("click", function (e) {
+        e.preventDefault();
+        dropdown.style.display = dropdown.style.display === "none" ? "block" : "none";
+    });
+    document.addEventListener("click", function (e) {
+        if (!moreBtn.contains(e.target) && !dropdown.contains(e.target)) {
+            dropdown.style.display = "none";
+        }
+    });
+});

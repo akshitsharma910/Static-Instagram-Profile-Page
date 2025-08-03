@@ -19,10 +19,20 @@
                 <li><img src="assets/send.png"><a href="#" ><span>Message</span></a> </li>
                 <li class="menu-item notifications" ><img src="assets/heart.png"><a href="#" ><span>Notifications</span></a></li>
                 <li><img src="assets/add.png"><a href="#" ><span>Create</span></a> </li>
-                <li><img src="assets/Me.jpg" style="border-radius: 50%; object-fit: cover;"><a href="#" ><span>Profile</span></a></li>
+                <li><img src="assets/Me.png" style="border-radius: 50%; object-fit: cover;rotate: 90deg;"><a href="#" ><span>Profile</span></a></li>
                 <div id="lower">
                 <li><img src="assets/threads.png"><a href="#"  ><span>Threads</span></a> </li>
-                <li><img src="assets/menu.png"><a href="#" ><span>More</span></a></li>
+                <li id="more-btn"><img src="assets/menu.png"><a href="#" ><span>More</span></a></li>
+                <div id="dropdown" style="display: none; position: absolute; left: 180px; bottom: 60px; background-color: white; border: 1px solid #ccc; border-radius: 6px; box-shadow: 0 2px 8px rgba(0,0,0,0.15); width: 200px; z-index: 999;">
+                    <ul style="list-style: none; margin: 0; padding: 10px;">
+                        <li style="padding: 8px 10px; cursor: pointer;">Settings</li>
+                        <li style="padding: 8px 10px; cursor: pointer;">Your Activity</li>
+                        <li style="padding: 8px 10px; cursor: pointer;">Saved</li>
+                        <li style="padding: 8px 10px; cursor: pointer;">Report a Problem</li>
+                        <li style="padding: 8px 10px; cursor: pointer;"><a href="/login.html" style="color: red;">Log Out</a></li>
+                    </ul>
+                </div>
+
                 </div>
             </ul>
         </div>
@@ -44,7 +54,7 @@
                     <button type="button" onclick="follow(event)" id="follow-btn" style="padding: 5px 20px;border-radius: 6px;border: none;background-color:#229df0 ;font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;color: white;">Follow</button>
                     <button type="button" style="padding: 5px 15px;border-radius: 6px;border: none;background-color: lightgrey;font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Message</button>
                     <button type="button" id="user" style="padding:3px 5px ;border-radius: 6px;border: none;background-color: lightgrey;" ><img src="assets/user.png" style="display: flex" ></button>
-                    <button type="button" id="dot" style="border-radius: 7px;border: none;background-color:transparent" ><img src="assets/threeDot.png" style="display: flex;"></button>
+                    <button type="button" id="dot" style="border-radius: 7px;border: none;background-color:transparent" ><img src="assets/threeDot.png" style="display: flex"></button>
                 </div>
                 </div>
                 <div id="count-line">
